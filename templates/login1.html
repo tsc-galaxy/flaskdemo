@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./static/jquery1.42.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('user.login1') }}" method="post">
+        {{form.csrf_token()}}
+        {{form.accountNumber.label}}  {{form.accountNumber}}<br>
+        {{form.password.label}}  {{form.password}}<br>
+        {{form.submit }}
+    </form>
+</body>
+</html>
