@@ -3,7 +3,7 @@ import pymysql
 if __name__=='__main__':
 #  1、连接到数据库
     con = pymysql.connect(host='127.0.0.1',
-                port=3306,
+                port=3308,
                 user='root',
                 password='root',
                 database='weibodemo',
